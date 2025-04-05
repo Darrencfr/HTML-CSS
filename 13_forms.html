@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Post = for sensitive data -->
+    <!-- Get = for insentive data -->
+    <!-- br = break line -->
+     <!-- multipart/form-data = opening large file by breaking it into smaller parts and resemble it -->
+    <form action="index.php" method="POST" enctype="multipart/form-data">
+        
+        <!-- forms -->
+        <label for="Username">Username:</label>
+        <input type="text" id="Username" placeholder="Spongebob" minlength="6" maxlength="15" required><br><br>
+        
+        <label for="Password">Password:</label>
+        <input type="password" id="Password" placeholder="Re123&^" minlength="8" maxlength="15" required><br><br>
+
+        <label for="Email">Email:</label>
+        <input type="email" id="Email" placeholder="ren123@gmail.com"><br><br>
+
+        <label for="Phone">Phone No.:</label>
+        <input type="phone" id="Phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+
+        <label for="Birth_date">Birth date:</label>
+        <input type="date" id="Birth_date"><br><br>
+
+        <label for="Quantity">Quantity:</label>
+        <input type="number" id="Quantity" min="0" max="100" value="1"><br><br>
+
+        <label for="Title">Tilte:</label><br>
+        <label for="Mr.">Mr.:</label>
+        
+        <!-- Radio button -->
+        <input type="radio" id="Mr." value="Mr." name="Title">
+        <label for="Mrs.">Mrs.:</label>
+        <input type="radio" id="Mrs." value="Mrs." name="Title">
+        <label for="PHD.">PHD.:</label>
+        <input type="radio" id="PHD." value="PHD." name="Title"><br><br>
+        
+        <!-- Drop Down Menu-->
+        <lable for="Payment">Payment:</lable>
+        <select id="Payment">
+            <option value="Visa">Visa</option>
+            <option Value="MasterCard">MasterCard</option>
+            <option value="GiftCard">GiftCard</option>
+        </select><br><br>
+        
+        <label for="Subscribe">Subsribe:</label>
+        <input type="checkbox" id="Subscribe"><br><br>
+
+        <label for="Comment">Comment:</label>
+        <textarea id="Comment" rows="3" cols="35"></textarea><br><br>
+
+        <label for="File">File:</label>
+        <input type="file" id="File" accept="image/png, image/jpeg"><br><br>
+
+        <!-- button -->
+        <input type="reset">
+        <input type="submit">
+    </form>
+</body>
+</html>
