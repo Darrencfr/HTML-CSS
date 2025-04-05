@@ -1,0 +1,1 @@
+This repository contains all the HTML and CSS exercises I completed while learning front-end web development fundamentals. It includes basic webpage structures, semantic HTML, styling with CSS, layout techniques (Flexbox, Grid), and responsive design practices. This repo reflects my hands-on journey in building visually appealing and structured web pages.
